@@ -1,0 +1,92 @@
+{% extends 'base.html.twig' %}
+
+{% block bannerimage %}
+    <div id="map"></div>
+{% endblock %}
+
+
+{% block menubar %}
+    <div class="mcontainer">
+        <ul id="menu">
+            <li><a href="{{ path('_home') }}">home</a></li>
+            <li><a href="{{ path('_dewerf') }}">de werf</a></li>
+            <li><a href="{{ path('_berging') }}">winter berging</a></li>
+            <li><a href="{{ path('_tarieven') }}">tarieven</a></li>
+            <li class="active"><a href="{{ path('_contact') }}">contact</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <h1>Contact</h1>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript">
+
+        var map;
+        var myLatLng;
+
+        function initMap() {
+
+            // Specify features and elements to define styles.
+            var styleArray = [
+                {
+                    featureType: "all",
+                    stylers: [
+                        { saturation: -80 }
+                    ]
+                },{
+                    featureType: "road.arterial",
+                    elementType: "geometry",
+                    stylers: [
+                        { hue: "#00ffee" },
+                        { saturation: 50 }
+                    ]
+                },{
+                    featureType: "poi.business",
+                    elementType: "labels",
+                    stylers: [
+                        { visibility: "off" }
+                    ]
+                }
+            ];
+
+            myLatLng = {lat: 51.229175, lng: 2.938661};
+            mapsUrl = "https://www.google.be/maps/place/Nieuwewerfkaai,+8400+Oostende/@51.2287193,2.9378418,17z/data=!3m1!4b1!4m7!1m4!3m3!1s0x47dca934605cba5b:0x11d94d405347529a!2sNieuwewerfkaai,+8400+Oostende!3b1!3m1!1s0x47dca934605cba5b:0x11d94d405347529a";
+
+
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                // Apply the map style array to the map.
+                styles: styleArray,
+                zoom: 13
+            });
+
+            var marker = new google.maps.Marker({
+                map: map,
+                position: myLatLng,
+                title: 'Jachtbroker Oostkust'
+            });
+
+            google.maps.event.addListener(marker, 'click', function() {
+
+                var win = window.open(mapsUrl, '_blank');
+                if(win){
+                    //Browser has allowed it to be opened
+                    win.focus();
+                }else{
+                    //Broswer has blocked it
+                    alert('We maken gebruik van een pop-up om de google maps site te openen.');
+                }
+
+            });
+        }
+
+    </script>
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADETrxyzqbgF5VrqQvm1tVFP8HsgaMuKo&callback=initMap">
+    </script>
+{% endblock %}
+

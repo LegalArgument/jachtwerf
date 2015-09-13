@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block bannerimage %}
+    <img src="{{ asset('images/vogelopzee.gif') }}" alt="berging"/>
+{% endblock %}
+
+{% block menubar %}
+    <div class="mcontainer">
+        <ul id="menu">
+            <li><a href="{{ path('_home') }}">home</a></li>
+            <li><a href="{{ path('_dewerf') }}">de werf</a></li>
+            <li class="active"><a href="{{ path('_berging') }}">winter berging</a></li>
+            <li><a href="{{ path('_tarieven') }}">tarieven</a></li>
+            <li><a href="{{ path('_contact') }}">contact</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <h1>Winter berging</h1>
+{% endblock %}

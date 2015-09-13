@@ -8,6 +8,19 @@
             "SymfonyStandard\\": "app/SymfonyStandard/"
         }
     },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "fontawesome/fontawesome",
+                "version": "3.0.2",
+                "dist": {
+                    "url": "https://github.com/FortAwesome/Font-Awesome/archive/v3.0.2.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ],
     "require": {
         "php": ">=5.3.9",
         "symfony/symfony": "2.7.*",
@@ -19,7 +32,8 @@
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~4.0",
         "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+        "components/font-awesome": "4.4.0"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
@@ -58,4 +72,6 @@
             "file": "app/config/parameters.yml"
         }
     }
+
+
 }

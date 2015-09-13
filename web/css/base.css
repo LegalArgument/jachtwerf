@@ -1,0 +1,168 @@
+/*-----------------------------------------------------------------------------------------------*/
+/*                                            FONT FACE                                          */
+/*-----------------------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: MetaWeb-Bold;
+    src: url("../fonts/MetaWeb-Bold.eot");
+}
+
+@font-face {
+    font-family: MetaWeb-Bold;
+    src: url("../fonts/MetaWeb-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: MetaWeb-Normal;
+    src: url("../fonts/MetaWeb-Normal.eot");
+}
+
+@font-face {
+    font-family: MetaWeb-Normal;
+    src: url("../fonts/MetaWeb-Normal.woff") format("woff");
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                              CORE LAYOUT                                      */
+/*-----------------------------------------------------------------------------------------------*/
+
+body {
+    background-color: #fff;
+    font: 13px "MetaWeb-Normal", sans-serif;
+    line-height: 18px;
+    color: black;
+}
+
+/* Text */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+h4 {
+    margin-bottom: 3px;
+}
+
+.rightalign{
+    text-align: right;
+}
+
+#sidemenu i.fa {
+    margin-right: 6px;
+    padding-top: 6px;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1050px;
+    height: 1000px;
+}
+
+aside#sidemenu {
+    width: 200px;
+    float: left;
+    height: 80%;
+    margin: 20px 10px 0px 0px;
+    padding-right: 15px;
+    border-right: 2px solid lightgray;
+    padding-top: 18px;
+}
+
+aside#sidemenu p:first-child {
+    margin-top: 0px;
+}
+
+aside#sidemenu p {
+    text-align: right;
+}
+
+div#content {
+    float: right;
+    width: 800px;
+    height: 80%;
+    padding: 22px 10px 10px 10px;
+}
+
+#headbar{
+    font: 18px "MetaWeb-Bold", sans-serif;
+    float: left;
+    width: 941px;
+    margin: 10px 0 0 109px;
+}
+
+#logo {
+    float: right;
+    width: 140px;
+    margin-right: 50px;
+    font-size: 28px;
+}
+
+#headbar a.button{
+    float: left;
+    margin-top: 10px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 3px solid black;
+}
+
+#navigation {
+    display: block;
+    width: 895px;
+    margin: 106px 0 0 0;
+    font: 19px "MetaWeb-Bold", sans-serif;
+    text-transform: lowercase;
+}
+
+#navigation ul {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    height: 25px;
+}
+
+#navigation ul li {
+    display: inline-block;
+    margin-left: 36px;
+}
+
+#navigation ul li:first-child {
+    margin-left: 0;
+}
+
+ul#menu li:hover, ul#menu li.active{
+    border-bottom: 3px solid black;
+}
+#banner{
+    float: left;
+    width: 1050px;
+    height: 300px;
+    margin-top: 15px;
+    background-color: #fbfbfb;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+div#footer {
+    height: 20%;
+    background: green;
+}
+
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                              CONTACT PAGE                                     */
+/*-----------------------------------------------------------------------------------------------*/
+
+div#map {
+    height: 100%;
+}

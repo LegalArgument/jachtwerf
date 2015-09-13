@@ -2,12 +2,70 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Jachtbroker Oostkust{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+        <link href="{{ asset('css/base.css') }}" rel="stylesheet" />
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <div id="container">
+            <div id="headbar">
+                <div id="logo">
+                    <a href="{{ path('_home') }}">
+                        Jachtbroker Oostkust
+                    </a>
+                </div>
+                <a class="button" href="{{ path('_berging') }}">
+                     aanvraag<br> winter berging »
+                </a>
+                <nav id="navigation">
+                    {% block menubar %}
+                    <div class="mcontainer">
+                        <ul id="menu">
+                            <li><a href="{{ path('_home') }}">home</a></li>
+                            <li><a href="{{ path('_dewerf') }}">de werf</a></li>
+                            <li><a href="{{ path('_berging') }}">winter berging</a></li>
+                            <li><a href="{{ path('_tarieven') }}">tarieven</a></li>
+                            <li><a href="{{ path('_contact') }}">contact</a></li>
+                        </ul>
+                    </div>
+                    {% endblock %}
+                </nav>
+            </div>
+            <div id="banner">
+                {% block bannerimage %}{% endblock %}
+            </div>
+            <aside id="sidemenu">
+                {% block sidemenu %}
+                    <p>
+                        Jachtbroker Oostkust BVBA<br/>
+                        Nieuwe Werfkaai 9<br/>
+                        8400 Oostende<br/>
+                    </p>
+
+                    <p>
+                        <i class="fa fa-phone"></i>0476 29 27 93<br/>
+                        <i class="fa fa-envelope"></i>jacky.versluys@skynet.be<br/>
+                    </p>
+
+                    <h4 class="rightalign">Openingstijden</h4>
+                    <p>
+                        Maandag t/m vrijdag<br/>
+                        van 08.00 tot 16.00 uur<br/>
+                        Zaterdag<br/>
+                        van 08.00 tot 12.00 uur<br/>
+                    </p>
+                {% endblock %}
+            </aside>
+            <div id="content">{% block content %}{% endblock %}</div>
+            <div class="clear-fix"></div>
+            <div id="footer">{% block footer %}{% endblock %}</div>
+        </div>
+
+        <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
+        <script src="{{ asset('js/custom.js') }}"></script>
         {% block javascripts %}{% endblock %}
+
     </body>
 </html>
