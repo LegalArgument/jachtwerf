@@ -12,9 +12,9 @@ parameters:
 
     mailer_transport: smtp
     mailer_host:
-    mailer_user: j
+    mailer_user:
     mailer_password:
     mailer_port:
 
     # A secret key that's used to generate certain security-related tokens
-    secret:            ThisTokenIsNotSoSecretChangeIt
+    secret:            ThisTokenIsNotSoSecretChangeItWhichIDidNoBackUp
