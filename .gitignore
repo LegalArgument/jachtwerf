@@ -8,4 +8,4 @@
 /composer.phar
 /vendor/
 /web/bundles/
-/app/config/
+/app/config/*
