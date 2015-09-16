@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="jachtwerf" />
+  <component name="PublishConfigData" serverName="jachtwerf" uploadOnCheckin="180ebb84-4cb5-4a69-a571-f6d9643c6779">
+    <option name="myUploadOnCheckinName" value="circlecube" />
+  </component>
 </project>
 

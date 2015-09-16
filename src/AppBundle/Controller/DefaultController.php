@@ -6,7 +6,7 @@ use AppBundle\Entity\Aanvraag;
 use Swift_Attachment;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use EWZ\Bundle\RecaptchaBundle\Validator\Constraints\IsTrue as RecaptchaTrue;
+//use EWZ\Bundle\RecaptchaBundle\Validator\Constraints\IsTrue as RecaptchaTrue;
 
 
 class DefaultController extends Controller
@@ -123,7 +123,7 @@ class DefaultController extends Controller
                 );
 
 
-            $attachment = Swift_Attachment::fromPath('files/RSA_21stcenturyenlightment.pdf');
+            //$attachment = Swift_Attachment::fromPath('files/RSA_21stcenturyenlightment.pdf');
 
             // Attach it to the message
             //$messageClient->attach($attachment);
