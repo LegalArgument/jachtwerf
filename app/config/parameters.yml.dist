@@ -14,6 +14,7 @@ parameters:
     mailer_host: smtp.mandrillapp.com
     mailer_user: jillversluys@gmail.com
     mailer_password: gp8pUwvqNCv7nFoMZRn5lw
+    mailer_port: 587
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt

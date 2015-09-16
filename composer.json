@@ -1,5 +1,6 @@
 {
     "name": "jiles/jachtwerf",
+    "description": "small website for a shipyard",
     "license": "proprietary",
     "type": "project",
     "autoload": {
