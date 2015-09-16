@@ -8,4 +8,7 @@
 /composer.phar
 /vendor/
 /web/bundles/
-/app/config/*
+
+
+app/config
+app/config/parameters.yml.dist
