@@ -11,11 +11,95 @@
             <li><a href="{{ path('_dewerf') }}">de werf</a></li>
             <li class="active"><a href="{{ path('_berging') }}">winter berging</a></li>
             <li><a href="{{ path('_tarieven') }}">tarieven</a></li>
+            <li><a href="{{ path('_verkoop') }}">verkoop</a></li>
             <li><a href="{{ path('_contact') }}">contact</a></li>
         </ul>
     </div>
 {% endblock %}
 
+{% block sidemenu %}
+    <ul id="sidelist">
+
+        {% if app.request.get('goto') == "form" %}
+            <li><a id="a_info" class="showArticle">Info</a></li>
+            <li class="active"><a id="a_aanvraag" class="showArticle">Aanvragen</a></li>
+        {% else %}
+            <li class="active"><a id="a_info" class="showArticle">Info</a></li>
+            <li><a id="a_aanvraag" class="showArticle">Aanvragen</a></li>
+        {% endif %}
+
+        <li><a href="{{ asset('files/RSA_21stcenturyenlightment.pdf')}}" target="_blank">Havenreglement</a></li>
+    </ul>
+{% endblock %}
+
 {% block content %}
-    <h1>Winter berging</h1>
+<div class="articles">
+
+    {% if app.request.get('goto') == "form" %}
+    <article id="info">
+    {% else %}
+    <article id="info" class="visible">
+    {% endif %}
+        <h1>Winter berging</h1>
+    </article>
+
+
+    {% if app.request.get('goto') == "form" %}
+    <article id="aanvraag" class="visible">
+    {% else %}
+    <article id="aanvraag">
+    {% endif %}
+
+        <h1>Winter berging: aanvraag</h1>
+
+        <div class="form">
+            {{ form_start(form) }}
+            <div class="leftcol">
+                <h4>Uw gegevens</h4>
+                {{ form_row(form.naam) }}
+                {{ form_row(form.voornaam) }}
+                {{ form_row(form.adres) }}
+                {{ form_row(form.postcode) }}
+                {{ form_row(form.plaats) }}
+                {{ form_row(form.telefoon) }}
+                {{ form_row(form.email) }}
+            </div>
+
+            <div class="leftcol">
+                <h4>Gegevens ship</h4>
+                {{ form_row(form.naamShip) }}
+                {{ form_row(form.typeShip) }}
+                {{ form_row(form.lengteShip) }}
+                {{ form_row(form.breedteShip) }}
+                {{ form_row(form.datumVanaf) }}
+                {{ form_row(form.datumTot) }}
+            </div>
+
+            <div class="clear-fix"></div>
+
+            <div class="opmerking">
+                <h4>Opmerking</h4>
+                {{ form_row(form.opmerking) }}
+            </div>
+
+            <div class="errors">
+                {{ form_errors(form) }}
+            </div>
+
+            {{ form_end(form) }}
+        </div>
+    </article>
+</div>
+
+
+{% endblock %}
+
+
+{% block javascripts %}
+    <script language="javascript">
+        jQuery(document).ready(function(){
+            jQuery('form').validate();
+        });
+    </script>
+    <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
 {% endblock %}

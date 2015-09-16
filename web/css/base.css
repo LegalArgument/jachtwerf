@@ -49,6 +49,11 @@ h4 {
     margin-bottom: 3px;
 }
 
+a.link {
+    color: #9C9999;
+    text-decoration: underline;
+}
+
 .rightalign{
     text-align: right;
 }
@@ -75,7 +80,6 @@ aside#sidemenu {
     margin: 20px 10px 0px 0px;
     padding-right: 15px;
     border-right: 2px solid lightgray;
-    padding-top: 18px;
 }
 
 aside#sidemenu p:first-child {
@@ -96,14 +100,13 @@ div#content {
 #headbar{
     font: 18px "MetaWeb-Bold", sans-serif;
     float: left;
-    width: 941px;
-    margin: 10px 0 0 109px;
+    width: 100%;
+    margin-top: 20px;
 }
 
 #logo {
     float: right;
     width: 140px;
-    margin-right: 50px;
     font-size: 28px;
 }
 
@@ -155,9 +158,27 @@ ul#menu li:hover, ul#menu li.active{
 
 div#footer {
     height: 20%;
-    background: green;
+
+}
+#logo {
+    float: right;
+    width: 200px;
+    font-size: 39px;
+    text-align: right;
 }
 
+.leftcol
+{
+    float: left;
+    margin-right: 50px;
+    width: 300px;
+
+}
+
+.rightcol
+{
+    float: right;
+}
 
 /*-----------------------------------------------------------------------------------------------*/
 /*                                              CONTACT PAGE                                     */
@@ -165,4 +186,162 @@ div#footer {
 
 div#map {
     height: 100%;
+}
+
+.icon-contact{
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+td.icon-column {
+    vertical-align: top;
+}
+
+hr.dash
+{
+    border: 1px dashed lightgrey;
+    margin: 15px 0;
+}
+/*-----------------------------------------------------------------------------------------------*/
+/*                                              SIDE MENU                                        */
+/*-----------------------------------------------------------------------------------------------*/
+
+ul#sidelist {
+    list-style-type: none;
+    font-size: 15px;
+    padding: 0;
+}
+
+ul#sidelist li {
+    margin: 0px 0px 10px 0px;
+    border-left: 2px solid black;
+    padding-left: 8px;
+    padding-top: 4px;
+}
+
+ul#sidelist li:hover {
+    font-weight: bold;
+}
+
+#sidelist li.active a {
+    font-weight: bold;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                              FORM                                             */
+/*-----------------------------------------------------------------------------------------------*/
+
+label.required:after {
+    content: " *";
+}
+
+.form label {
+    /* width: 80px; */
+    display: block;
+}
+
+.leftcol > div {
+    margin-bottom: 11px;
+}
+
+.form input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+
+textarea#form_opmerking {
+    width: 668px;
+    height: 100px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+form select {
+    padding: 4px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+button {
+    background: black;
+    border: 2px solid black;
+    color: white;
+    padding: 6px;
+    font: 15px "MetaWeb-Normal", sans-serif;
+    cursor: pointer;
+}
+
+form input.error
+{
+    border: 1px solid red;
+    background: #f0c3bc;
+}
+label.error{
+    display: none !important;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                              DE WERF                                          */
+/*-----------------------------------------------------------------------------------------------*/
+
+
+a.showArticle{
+    cursor: pointer;
+}
+
+.articles article
+{
+    display: none;
+}
+
+.articles article.visible
+{
+    display: block;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                              VERKOOP                                          */
+/*-----------------------------------------------------------------------------------------------*/
+
+img.thumbnail {
+    width: 100px;
+    vertical-align: middle;
+}
+
+section.image {
+    width: 150px;
+    float: left;
+
+    text-align: center; margin: 1em 0;
+}
+
+section.description {
+    float: right;
+    width: 630px;
+}
+
+section.image a {
+    display: block;
+}
+
+section.description h4 {
+    margin-top: 0;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+a.dontshow
+{
+    visibility: hidden;
+}
+
+hr.verkoop {
+    margin-bottom: 15px;
 }

@@ -1,0 +1,19 @@
+{% extends 'simpel/berging.html.twig' %}
+
+{% block sidemenu %}
+    <ul id="sidelist">
+        <li><a href="{{ path('_berging') }}">Info</a></li>
+        <li class="active"><a href="{{ path('_bergingAanvragen') }}">Aanvragen</a></li>
+        <li><a href="{{ asset('files/RSA_21stcenturyenlightment.pdf')}}" target="_blank">Havenreglement</a></li>
+    </ul>
+{% endblock %}
+
+
+{% block content %}
+    <h1>Winter berging: aanvraag</h1>
+
+    <p>We hebben uw aanvraag goed ontvangen en nemen spoedig contact met u op om de details verder te bespreken.</p>
+
+
+{% endblock %}
+

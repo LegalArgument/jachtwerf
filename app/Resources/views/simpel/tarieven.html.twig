@@ -12,11 +12,74 @@
             <li><a href="{{ path('_dewerf') }}">de werf</a></li>
             <li><a href="{{ path('_berging') }}">winter berging</a></li>
             <li class="active"><a href="{{ path('_tarieven') }}">tarieven</a></li>
+            <li><a href="{{ path('_verkoop') }}">verkoop</a></li>
             <li><a href="{{ path('_contact') }}">contact</a></li>
         </ul>
     </div>
 {% endblock %}
 
 {% block content %}
-    <h1>Tarieven</h1>
+    <h1>Tarieven Berging</h1>
+
+    <table border="0" width="600" align="left">
+        <tbody>
+        <tr>
+            <td width="290"><strong>Berging</strong></td>
+            <td width="150"><strong>Omschrijving</strong></td>
+            <td width="150"><strong>Prijs</strong></td>
+        </tr>
+        <tr>
+            <td>Winterberging (terrein, buiten) *</td>
+            <td>per m²</td>
+            <td>€36,50</td>
+        </tr>
+        <tr>
+            <td>Winterberging (loods, binnen) *</td>
+            <td>per m²</td>
+            <td>€47,50</td>
+        </tr>
+        <tr>
+            <td width="290"></td>
+            <td width="150"></td>
+            <td width="150"></td>
+        </tr>
+
+        <tr>
+            <td width="290">Eigen bok of trailer</td>
+            <td width="150"></td>
+            <td width="150">€50,00</td>
+        </tr>
+        <tr>
+            <td width="290">Mast in loods</td>
+            <td width="150"></td>
+            <td width="150">€50,00</td>
+        </tr>
+        <tr>
+            <td width="290"></td>
+            <td width="150"></td>
+            <td width="150"></td>
+        </tr>
+        <tr>
+            <td width="290">Milieutoeslag</td>
+            <td width="150"></td>
+            <td width="150">€10,00</td>
+        </tr>
+        <tr>
+            <td width="290"></td>
+            <td width="150"></td>
+            <td width="150"></td>
+        </tr>
+        <tr>
+            <td><em>* met een minimum van 10&nbsp;m²</em></td>
+            <td></td>
+            <td><em>prijzen incl. 21% BTW</em></td>
+        </tr>
+        <tr>
+            <td width="290"></td>
+            <td width="150"></td>
+            <td width="150"></td>
+        </tr>
+
+        </tbody>
+    </table>
 {% endblock %}

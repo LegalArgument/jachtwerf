@@ -96,4 +96,11 @@ swiftmailer:
     host:      "%mailer_host%"
     username:  "%mailer_user%"
     password:  "%mailer_password%"
-    spool:     { type: memory }
+    port:      "%mailer_port%"
+    # spool:     { type: memory }
+
+# ReCaptcha Configuration
+ewz_recaptcha:
+    public_key:  6LdEyQwTAAAAAAK-RP2TYnuqBLlu4Kjsn--Z3QyN
+    private_key: 6LdEyQwTAAAAAFeRMEWHA3JcvZA0Ldh_w5LP-wM3
+    locale_key:  %kernel.default_locale%

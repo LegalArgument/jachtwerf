@@ -43,6 +43,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/orm" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/excelwebzone/recaptcha-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/incenteev/composer-parameter-handler" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jdorn/sql-formatter" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/kriswallsmith/assetic" />
@@ -101,6 +102,7 @@
           <root url="file://$MODULE_DIR$/vendor/doctrine/common" />
           <root url="file://$MODULE_DIR$/vendor/symfony/swiftmailer-bundle" />
           <root url="file://$MODULE_DIR$/vendor/components/font-awesome" />
+          <root url="file://$MODULE_DIR$/vendor/excelwebzone/recaptcha-bundle" />
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/doctrine/dbal" />
@@ -130,6 +132,7 @@
           <root url="file://$MODULE_DIR$/vendor/doctrine/common" />
           <root url="file://$MODULE_DIR$/vendor/symfony/swiftmailer-bundle" />
           <root url="file://$MODULE_DIR$/vendor/components/font-awesome" />
+          <root url="file://$MODULE_DIR$/vendor/excelwebzone/recaptcha-bundle" />
         </SOURCES>
       </library>
     </orderEntry>

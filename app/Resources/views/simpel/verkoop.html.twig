@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block bannerimage %}
+    <img src="{{ asset('images/tweemaster.gif') }}" alt="berging"/>
+{% endblock %}
+
+
+{% block menubar %}
+    <div class="mcontainer">
+        <ul id="menu">
+            <li><a href="{{ path('_home') }}">home</a></li>
+            <li><a href="{{ path('_dewerf') }}">de werf</a></li>
+            <li><a href="{{ path('_berging') }}">winter berging</a></li>
+            <li><a href="{{ path('_tarieven') }}">tarieven</a></li>
+            <li  class="active"><a href="{{ path('_verkoop') }}">verkoop</a></li>
+            <li><a href="{{ path('_contact') }}">contact</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+
+
+{% block content %}
+    <h1>Verkoop</h1>
+
+    <p>Als u interesse hebt in één van onderstaande producten, naam dan contact op <a href="mailto:jacky.versluys@skynet.be" class="link">via mail</a> of geef ons een belletje.</p>
+    <br/>
+    <!-- Article 1 -->
+    <article class="verkoop">
+
+        <section class="image">
+            <a href="{{ asset('images/verkoop/anker.jpg') }}" data-lightbox="image-1">
+                <span class="helper"></span>
+                <img class="thumbnail" src="{{ asset('images/verkoop/anker.jpg') }}"/>
+            </a>
+            <a class="dontshow" href="{{ asset('images/verkoop/anchor2.jpg') }}" data-lightbox="image-1"></a>
+        </section>
+
+        <section class="description">
+            <h4>Een anker</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est ipsum, faucibus eu sem ut, tempus vulputate massa. Cras sagittis viverra felis, eget ultricies dolor mollis ut.
+            </p>
+            <p class="prijs">&euro;300</p>
+            <p class="date">Online sinds <time datetime="2015-09-15 19:00">15 september 2015</time></p>
+        </section>
+        <div class="clear-fix"></div>
+    </article>
+    <hr class="verkoop"/>
+    <!-- Article 2 -->
+    <article class="verkoop">
+
+        <section class="image">
+            <a href="{{ asset('images/verkoop/kraan.jpg') }}" data-lightbox="image-2">
+                <span class="helper"></span>
+                <img class="thumbnail" src="{{ asset('images/verkoop/kraan.jpg') }}"/>
+            </a>
+        </section>
+
+        <section class="description">
+            <h4>Een kraan</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est ipsum, faucibus eu sem ut, tempus vulputate massa. Cras sagittis viverra felis, eget ultricies dolor mollis ut.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est ipsum, faucibus eu sem ut, tempus vulputate massa. Cras sagittis viverra felis, eget ultricies dolor mollis ut.
+            </p>
+            <p class="prijs">&euro;300.000</p>
+            <p class="date">Online sinds <time datetime="2015-09-15 19:00">15 september 2015</time></p>
+        </section>
+        <div class="clear-fix"></div>
+    </article>
+    <hr class="verkoop"/>
+
+
+{% endblock %}
+
+
+

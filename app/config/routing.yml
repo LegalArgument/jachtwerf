@@ -18,6 +18,10 @@ _tarieven:
     path: /tarieven
     defaults: { _controller: AppBundle:Default:tarieven }
 
+_verkoop:
+    path: /verkoop
+    defaults: { _controller: AppBundle:Default:verkoop }
+
 _contact:
     path: /contact
     defaults: { _controller: AppBundle:Default:contact }

@@ -12,11 +12,77 @@
             <li class="active"><a href="{{ path('_dewerf') }}">de werf</a></li>
             <li><a href="{{ path('_berging') }}">winter berging</a></li>
             <li><a href="{{ path('_tarieven') }}">tarieven</a></li>
+            <li><a href="{{ path('_verkoop') }}">verkoop</a></li>
             <li><a href="{{ path('_contact') }}">contact</a></li>
         </ul>
     </div>
 {% endblock %}
 
-{% block content %}
-    <h1>Restauratie en reparatie</h1>
+{% block sidemenu %}
+    <ul id="sidelist">
+        <li class="active"><a id="a_restauratie" class="showArticle">Restauratie en reparatie</a></li>
+        <li><a id="a_interieur" class="showArticle">Interieur</a></li>
+        <li><a id="a_onderhoud" class="showArticle">Onderhoud</a></li>
+        <li><a id="a_osmose" class="showArticle">Osmose behandeling</a></li>
+        <li><a id="a_teaken" class="showArticle">Teaken dek</a></li>
+    </ul>
 {% endblock %}
+
+{% block content %}
+    <div class="articles">
+        <article id="restauratie" class="visible">
+            <h1>Restauratie en reparatie</h1>
+            {#<h1><a class="anchor" name="restauratie">Restauratie en reparatie</a></h1>#}
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est ipsum, faucibus eu sem ut, tempus vulputate massa. Cras sagittis viverra felis, eget ultricies dolor mollis ut. In vulputate quam non nunc bibendum dictum. Duis faucibus quis neque auctor aliquam. Integer viverra eros eget magna ultrices porta. Nulla faucibus enim accumsan turpis congue, ac fringilla arcu malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat sed massa vitae tincidunt. Curabitur et ipsum sit amet purus posuere aliquet. Integer tincidunt ligula in urna interdum vulputate. Integer in tellus condimentum, venenatis purus nec, cursus enim.
+
+                Aenean leo lectus, finibus ac mi non, consectetur posu
+            </p>
+        </article>
+
+        <article id="interieur">
+            <h1>Interieur</h1>
+            {#<h1><a class="anchor"  name="interieur">Interieur</a></h1>#}
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est ipsum, faucibus eu sem ut, tempus vulputate massa. Cras sagittis viverra felis, eget ultricies dolor mollis ut. In vulputate quam non nunc bibendum dictum. Duis faucibus quis neque auctor aliquam. Integer viverra eros eget magna ultrices porta. Nulla faucibus enim accumsan turpis congue, ac fringilla arcu malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat sed massa vitae tincidunt. Curabitur et ipsum sit amet purus posuere aliquet. Integer tincidunt ligula in urna interdum vulputate. Integer in tellus condimentum, venenatis purus nec, cursus enim.
+
+                Aenean leo lectus, finibus ac mi non, consectetur posu
+            </p>
+        </article>
+
+        <article id="onderhoud">
+            <h1>Onderhoud</h1>
+            {#<h1><a class="anchor"  name="onderhoud">Onderhoud</a></h1>#}
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est ipsum, faucibus eu sem ut, tempus vulputate massa. Cras sagittis viverra felis, eget ultricies dolor mollis ut. In vulputate quam non nunc bibendum dictum. Duis faucibus quis neque auctor aliquam. Integer viverra eros eget magna ultrices porta. Nulla faucibus enim accumsan turpis congue, ac fringilla arcu malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat sed massa vitae tincidunt. Curabitur et ipsum sit amet purus posuere aliquet. Integer tincidunt ligula in urna interdum vulputate. Integer in tellus condimentum, venenatis purus nec, cursus enim.
+
+                Aenean leo lectus, finibus ac mi non, consectetur posu
+            </p>
+        </article>
+
+        <article id="osmose">
+            <h1>Osmose behandeling</h1>
+            {#<h1><a class="anchor"  name="osmose">Osmose behandeling</a></h1>#}
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est ipsum, faucibus eu sem ut, tempus vulputate massa. Cras sagittis viverra felis, eget ultricies dolor mollis ut. In vulputate quam non nunc bibendum dictum. Duis faucibus quis neque auctor aliquam. Integer viverra eros eget magna ultrices porta. Nulla faucibus enim accumsan turpis congue, ac fringilla arcu malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat sed massa vitae tincidunt. Curabitur et ipsum sit amet purus posuere aliquet. Integer tincidunt ligula in urna interdum vulputate. Integer in tellus condimentum, venenatis purus nec, cursus enim.
+
+                Aenean leo lectus, finibus ac mi non, consectetur posu
+            </p>
+        </article>
+
+        <article id="teaken">
+            <h1>Teaken dek</h1>
+            {#<h1><a class="anchor" name="teaken">Teaken dek</a></h1>#}
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est ipsum, faucibus eu sem ut, tempus vulputate massa. Cras sagittis viverra felis, eget ultricies dolor mollis ut. In vulputate quam non nunc bibendum dictum. Duis faucibus quis neque auctor aliquam. Integer viverra eros eget magna ultrices porta. Nulla faucibus enim accumsan turpis congue, ac fringilla arcu malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat sed massa vitae tincidunt. Curabitur et ipsum sit amet purus posuere aliquet. Integer tincidunt ligula in urna interdum vulputate. Integer in tellus condimentum, venenatis purus nec, cursus enim.
+
+                Aenean leo lectus, finibus ac mi non, consectetur posu
+            </p>
+        </article>
+    </div>
+
+
+{% endblock %}
+
+
+
